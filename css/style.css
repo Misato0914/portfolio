@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+/* cssリセット */
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4f260b;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+body {
+    background-color: #9944cc;
+}
+
+.container {
+    margin: 50px;
+    background-color: #fef4f8;
+}
+
+.nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 70px 40px 20px;
+}
+
+.nav_list {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav_item {
+    font-family: "Prata", serif;
+}
+
+.nav_item + .nav_item {
+    margin-left: 25px;
+}
+
+.fv {
+    position: relative;
+}
+
+.fv_title {
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    transform: translateY(-50%);
+    width: 20.9%;
+}
+
+.fv_img {
+    width: 71.2%;
+    margin-left: auto;
+}
+
+.h2 {
+    font-size: 50px;
+    color: #111111;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+}
+
+.h2_service {
+    text-align: center;
+    padding: 80px 500px;
+}
+
+.h2_work {
+    text-align: center;
+    padding: 80px 500px;
+}
+
+.h2_pic {
+    text-align: center;
+    padding: 80px 500px;
+}
+
+.h2_intro {
+    text-align: center;
+    padding: 80px 500px;
+}
+
+.h2_contact {
+    text-align: center;
+    padding: 80px 500px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+}
+
+.service1 {
+    color: black;
+    text-align: center;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.service2 {
+    color: black;
+    text-align: center;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+}

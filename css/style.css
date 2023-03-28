@@ -92,62 +92,198 @@ body {
     margin-left: auto;
 }
 
-.h2 {
+.h2_work,
+.h2_service,
+.h2_pic,
+.h2_intro,
+.h2_contact {
     font-size: 50px;
     color: #111111;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
         "MS 明朝", serif;
-}
-
-.h2_service {
     text-align: center;
     padding: 80px 500px;
 }
 
-.h2_work {
+.h3_work,
+.h3_service,
+.h3_pic,
+.h3_intro,
+.h3_contact {
+    font-size: 24px;
+    color: #ff5086;
+    font-family: "Prata", serif;
     text-align: center;
-    padding: 80px 500px;
-}
-
-.h2_pic {
-    text-align: center;
-    padding: 80px 500px;
-}
-
-.h2_intro {
-    text-align: center;
-    padding: 80px 500px;
-}
-
-.h2_contact {
-    text-align: center;
-    padding: 80px 500px;
+    padding: 5px 500px;
 }
 
 .service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    grid-template-rows: 200px 200px;
+}
+
+.service1,
+.service2,
+.service3,
+.service4 {
+    color: black;
+    text-align: center;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
+        "MS 明朝", serif;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.service1_img,
+.service2_img,
+.service3_img,
+.service4_img {
+    width: 250px;
+    height: 160px;
+}
+
+.c-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.c-form__item {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.c-form__label,
+.c-form__input {
+    padding: 10px;
+}
+.c-form__label {
+    width: 90%;
+}
+.c-form__input {
+    width: 90%;
+    font-size: 16px;
+    border: solid 1px #333;
+    border-radius: 4px;
+}
+.c-form__input:focus-visible {
+    outline: #9944cc auto 1px;
+}
+.c-form__required {
+    color: #fff;
+    background-color: #9944cc;
+    border-radius: 4px;
+    padding: 5px 5px;
+    margin: 0 0 0 18px;
+}
+textarea.c-form__input {
+    height: 160px;
+}
+.c-form__submit {
+    text-align: center;
+}
+.c-form__submit button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #9944cc;
+    border: solid 1px #9944cc;
+    border-radius: 4px;
+    padding: 5px 32px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.c-form__submit button:hover {
+    color: #9944cc;
+    background-color: transparent;
 }
 
-.service1 {
-    color: black;
-    text-align: center;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
-        "MS 明朝", serif;
-    line-height: 100px;
-    width: 100px;
-    height: 100px;
+@media (min-width: 640px) {
+    .c-form__item {
+        flex-wrap: nowrap;
+    }
+    .c-form__label {
+        width: 40%;
+    }
+    .c-form__input {
+        width: 55%;
+    }
 }
 
-.service2 {
-    color: black;
+footer {
     text-align: center;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
-        "MS 明朝", serif;
-    line-height: 100px;
-    width: 100px;
-    height: 100px;
+}
+
+footer p {
+    color: #fef4f8;
+    font-size: 16px;
+}
+
+/* works */
+
+.accordion-002 {
+    max-width: 500px;
+    margin-bottom: 7px;
+    border: 2px solid #ff5086;
+    border-radius: 5px;
+}
+
+.accordion-002 summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1em 2em;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2028%2028%22%3E%0A%20%20%20%20%3Ccircle%20cx%3D%2214%22%20cy%3D%2214%22%20r%3D%2214%22%20style%3D%22fill%3A%23ff5086%3B%22%2F%3E%0A%3C%2Fsvg%3E");
+    background-position: right calc(2em - 7px) center;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    color: #ff5086;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.accordion-002 summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion-002 summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 5px;
+    height: 5px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    content: "";
+    transition: transform 0.3s;
+}
+
+.accordion-002[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion-002 p {
+    transform: translateY(-10px);
+    opacity: 0;
+    margin: 0;
+    padding: 0 2em 1.5em;
+    color: #333333;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.accordion-002[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+/* pictures */
+.grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
 }

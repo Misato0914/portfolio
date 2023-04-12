@@ -26,7 +26,48 @@
 
 
     </div>
+
+    <div class="pagetop">
+        <a href="#header"><img src="images/2x/FLYTOP@2x.png" alt="FLY TOP"></a>
+    </div>
 </body>
+
+<script>
+    $(function () {
+
+        // ページトップフェードイン
+        $('.pagetop').hide();
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 200) {
+                $('.pagetop').fadeIn();
+            } else {
+                $('.pagetop').fadeOut();
+            }
+        });
+
+        $(window).on("scroll", function () {
+            scrollHeight = $(document).height();
+            scrollPosition = $(window).height() + $(window).scrollTop();
+            footHeight = $("footer").innerHeight() - 120;
+            if (scrollHeight - scrollPosition <= footHeight) {
+                // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+                $('body').css({
+                    position: 'relative'
+                })
+                $(".pagetop").css({
+                    position: "absolute",
+                    bottom: footHeight,
+                });
+            } else {
+                $(".pagetop").css({
+                    position: "fixed",
+                    bottom: "40px",
+                });
+            }
+        });
+    });
+
+</script>
 
 <footer>
     <div class="wrapper">

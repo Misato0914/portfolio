@@ -8,6 +8,16 @@
     <title>MISATO design and creative</title>
     <meta name="description" content="MISATOのポートフォリオサイトです。">
     <link rel="stylesheet" href="css/style.css">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="main.js"></script>
+
 </head>
 
 
@@ -16,11 +26,11 @@
 
         <nav class="nav">
             <ul class="nav_list">
-                <li class="nav_item"><a href=""> SERVICE</a></li>
-                <li class="nav_item"><a href=""> WORKS</a></li>
-                <li class="nav_item"><a href=""> PICTURES</a></li>
-                <li class="nav_item"><a href=""> ABOUT ME</a></li>
-                <li class="nav_item"><a href=""> CONTACT</a></li>
+                <li class="nav_item"><a href="service.html"> SERVICE</a></li>
+                <li class="nav_item"><a href="works.html"> WORKS</a></li>
+                <li class="nav_item"><a href="pictures.html"> PICTURES</a></li>
+                <li class="nav_item"><a href="about.html"> ABOUT ME</a></li>
+                <li class="nav_item"><a href="index.html#contact"> CONTACT</a></li>
             </ul>
         </nav>
 
@@ -32,73 +42,224 @@
 
 
 
-        <h2 class="h2_service">サービス</h2>
-        <h3 class="h3_service">Service</h3>
+        <section id="service" class="service">
+            <h2>サービス</h2>
+            <h3>Service</h3>
 
-        <div class="service">
+            <div class="service_block">
 
-            <div class="service1">デザイン</div>
-            <div class="service2">コーディング</div>
-            <div class="service1_img"><img src="images/img_service1@2x.png" alt="design-photo"></div>
-            <div class="service2_img"><img src="images/img_service2@2x.png" alt="cording-photo"></div>
+                <div class="service_item">
+                    <h4>デザイン</h4>
+                    <img src="images/img_service1@2x.png" alt="design-photo">
+                    <p>クライアント様としっかりと対話した上で、課題解決のお手伝いができるようなデザインイメージを作成させていただきます。</p>
+                </div>
 
-            <!-- <p>クライアント様としっかりと対話した上で、課題解決のお手伝いができるようなデザインイメージを作成させていただきます。</p> -->
-            <!-- <p>デザインに動きをつけることで、さらに見やすくように、コーデイングを行なってまいります。UI・UXを意識し、様々なコーディングを行わせていただきます。</p> -->
+                <div class="service__item">
+                    <h4>コーディング</h4>
+                    <img src="images/img_service2@2x.png" alt="cording-photo">
+                    <p>デザインに動きをつけることで、さらに見やすくように、コーデイングを行なってまいります。UI・UXを意識し、様々なコーディングを行わせていただきます。</p>
+                </div>
 
-            <div class="service3">ディレクション</div>
-            <div class="service4">写真撮影</div>
-            <div class="service3_img"><img src="images/img_service3@2x.png" alt="direction-photo"></div>
-            <div class="service4_img"><img src="images/img_service4@2x.png" alt="camera-photo"></div>
-            <!-- <p>新商品を出したい！でも、どうしたら売れる商品ができるのだろうか？販促ってどうしたらいいの？
-            そのようなお悩みを、丁寧なカウンセリングとプランニングでサポートします。</p> -->
-            <!-- <p>フリーランスカメラマンとして、ポートレイト撮影を承っております。</p> -->
+                <div class="service__item">
+                    <h4>ディレクション</h4>
+                    <img src="images/img_service3@2x.png" alt="direction-photo">
+                    <p>新商品を出したい！でも、どうしたら売れる商品ができるのだろうか？販促ってどうしたらいいの？
+                        そのようなお悩みを、丁寧なカウンセリングとプランニングでサポートします。</p>
+                </div>
+                <div class="service__item">
+                    <h4>写真撮影</h4>
+                    <img src="images/img_service4@2x.png" alt="shooting-photo">
+                    <p>フリーランスカメラマンとして、ポートレイト撮影を承っております。</p>
+                </div>
+            </div>
 
+            <img src="images/2x/button-service@2x.png" alt="button-service">
+
+        </section>
+
+
+        <section id="works" class="works">
+
+            <h2>制作実績</h2>
+            <h3>Works</h3>
+
+            <div class="works_block">
+
+                <div class="works_item">
+                    <img src="images/img_works@2x.png" alt="works_img">
+                </div>
+            </div>
+
+            <img src="images/2x/button-work@2x.png" alt="button-works">
+
+        </section>
+
+
+        <section id="pictures" class="pictures">
+
+            <h2>撮影実績</h2>
+            <h3>Pictures</h3>
+
+            <ul class="slider">
+                <li><a href="images/DSC_0012.JPG" data-lightbox="gallary" data-title="ギャラリー5"><img
+                            src="images/DSC_0012.JPG" alt="ギャラリー5"></a></li>
+                <li><a href="images/DSC_0387.JPG" data-lightbox="gallary" data-title="ギャラリー4"><img
+                            src="images/DSC_0387.JPG" alt="ギャラリー4"></a></li>
+                <li><a href="images/DSC_7184.JPG" data-lightbox="gallary" data-title="ギャラリー3"><img
+                            src="images/DSC_7184.JPG" alt="ギャラリー3"></a></li>
+                <li><a href="images/DSC_9669.JPG" data-lightbox="gallary" data-title="ギャラリー2"><img
+                            src="images/DSC_9669.JPG" alt="ギャラリー2"></a></li>
+                <li><a href="images/DSC_9779.JPG" data-lightbox="gallary" data-title="ギャラリー1"><img
+                            src="images/DSC_9779.JPG" alt="ギャラリー1"></a></li>
+                <li><a href="images/DSC_0396.JPG" data-lightbox="gallary" data-title="ギャラリー1"><img
+                            src="images/DSC_0396.JPG" alt="ギャラリー1"></a></li>
+            </ul>
+
+            <img src="images/2x/button-pic@2x.png" alt="">
+
+        </section>
+
+
+        <section id="about" class="about">
+            <h2>自己紹介</h2>
+            <h3>About me</h3>
+
+
+            <div class="about_block">
+
+                <div class="about_img">
+                    <img src="images/2x/img_about@2x.png" alt="about_photo">
+                </div>
+
+                <p>MISATO<br>ウェブデザイナー、フリーランスカメラマン<br>
+                    星の数ほどあるデザインWebサイトの中から、私のサイトを見つけてくださり、また、閲覧くださいまして、誠にありがとうございます。
+                    これからも、皆様のお役に立てますよう益々精進してまいりますので、ご指導ご鞭撻の程、どうぞよろしくお願い申し上げます。</p>
+
+            </div>
+
+
+        </section>
+
+        <img src="images/2x/button-about@2x.png" alt="button-about">
+
+
+        <section id="contact" class="contact">
+
+            <h2>お問い合わせ</h2>
+            <h3>Contact</h3>
+
+            <div class="contact_block">
+
+
+                <div class="contact_item">
+                    <p>お仕事のお問い合わせ、応援メッセージ、いつでもお待ちしております！<br>
+                        お問い合せ欄、InstagramのDMよりどうぞ、お気軽にお問い合せください。<br>
+                        ※ 1〜2日以内にお返事いたします。</p>
+                </div>
+
+                <div class="contact_item">
+                    <img src="images/instagram.psd" alt="inatagram-icon">
+                    <p>Instagramはこちらから</p>
+                </div>
+
+                <div class="contact_form">
+                    <p style="text-align: center; margin: 40px auto">
+                        お問い合わせはこちらからどうぞ♪
+                    </p>
+                    <form class="c-form">
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-name">お名前<span
+                                    class="c-form__required">必須</span></label>
+                            <input class="c-form__input" id="field-name" placeholder="山田 太郎" type="text"
+                                required="required" />
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-mail">メールアドレス<span
+                                    class="c-form__required">必須</span></label>
+                            <input class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="email"
+                                required="required" />
+                        </div>
+                        <div class="c-form__item">
+                            <label class="c-form__label" for="field-message">メッセージ内容</label>
+                            <textarea class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
+                        </div>
+                        <div class="c-form__submit">
+                            <button type="submit">送信する</button>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <ul class="last_list">
+            <li class="last_item"><a href="index.html#service"> SERVICE</a></li>
+            <li class="last_item"><a href="index.html#works"> WORKS</a></li>
+            <li class="last_item"><a href="index.html#pictures"> PICTURES</a></li>
+            <li class="last_item"><a href="index.html#about"> ABOUT ME</a></li>
+            <li class="last_item"><a href="index.html#CONTACT"> CONTACT</a></li>
+        </ul>
+
+        <div class="pagetop">
+            <a href="#header"><img src="images/2x/FLYTOP@2x.png" alt="FLY TOP"></a>
         </div>
 
-        <h2 class="h2_work">制作実績</h2>
-        <h3 class="h3_work">Works</h3>
-        <div class="works_img"><img src="images/img_works@2x.png" alt="works_img"></div>
+        <script>
+            $(function () {
 
-        <h2 class="h2_pic">撮影実績</h2>
-        <h3 class="h3_pic">Pictures</h3>
+                // スライダー
 
-        <h2 class="h2_intro">自己紹介</h2>
-        <h3 class="h3_intro">About me</h3>
-        <div class="aboutme_img"><img src="images/2x/img_about@2x.png" alt="about_photo"></div>
-        <p>MISATO<br>ウェブデザイナー、フリーランスカメラマン</p>
-        <p>星の数ほどあるデザインWebサイトの中から、私のサイトを見つけてくださり、また、閲覧くださいまして、誠にありがとうございます。
-            これからも、皆様のお役に立てますよう益々精進してまいりますので、ご指導ご鞭撻の程、どうぞよろしくお願い申し上げます。</p>
+                $(document).ready(function () {
+                    $('.slider').slick({
+                        dots: true,
+                        infinite: true,
+                        speed: 500,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000
+                    });
+                });
 
-        <h2 class="h2_contact">お問合せ</h2>
-        <h3 class="h3_contact">Contact</h3>
-        <p>お仕事のお問い合わせ、応援メッセージ、いつでもお待ちしております！<br>
-            お問い合せ欄、InstagramのDMよりどうぞ、お気軽にお問い合せください。<br>
-            ※ 1〜2日以内にお返事いたします。</p>
+                // ページトップフェードイン
+                $('.pagetop').hide();
+                $(window).on('scroll', function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.pagetop').fadeIn();
+                    } else {
+                        $('.pagetop').fadeOut();
+                    }
+                });
 
-        <p style="text-align: center; margin: 40px auto">
-            お問い合わせはこちらからどうぞ♪
-        </p>
-        <form class="c-form">
-            <div class="c-form__item">
-                <label class="c-form__label" for="field-name">お名前<span class="c-form__required">必須</span></label>
-                <input class="c-form__input" id="field-name" placeholder="山田 太郎" type="text" required="required" />
-            </div>
-            <div class="c-form__item">
-                <label class="c-form__label" for="field-mail">メールアドレス<span class="c-form__required">必須</span></label>
-                <input class="c-form__input" id="field-mail" placeholder="sample@gmail.com" type="email"
-                    required="required" />
-            </div>
-            <div class="c-form__item">
-                <label class="c-form__label" for="field-message">メッセージ内容</label>
-                <textarea class="c-form__input" id="field-message" placeholder="お問い合わせ内容"></textarea>
-            </div>
-            <div class="c-form__submit">
-                <button type="submit">送信する</button>
-            </div>
-        </form>
+                $(window).on("scroll", function () {
+                    scrollHeight = $(document).height();
+                    scrollPosition = $(window).height() + $(window).scrollTop();
+                    footHeight = $("footer").innerHeight() - 120;
+                    if (scrollHeight - scrollPosition <= footHeight) {
+                        // ページトップボタンがフッター手前に来たらpositionとfixedからabsoluteに変更
+                        $('body').css({
+                            position: 'relative'
+                        })
+                        $(".pagetop").css({
+                            position: "absolute",
+                            bottom: footHeight,
+                        });
+                    } else {
+                        $(".pagetop").css({
+                            position: "fixed",
+                            bottom: "40px",
+                        });
+                    }
+                });
+            });
+
+        </script>
 
 
     </div>
+
 
 </body>
 

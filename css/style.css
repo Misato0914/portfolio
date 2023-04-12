@@ -1,8 +1,12 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Sofia&display=swap");
 /* cssリセット */
+
+html {
+    scroll-behavior: smooth;
+}
 
 html,
 body,
@@ -19,10 +23,9 @@ li {
     padding: 0;
     line-height: 1;
     /*デフォルトの文字色、font-familyを予め当てておく*/
-    color: #4f260b;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
-        "MS 明朝", serif;
+    color: #19030b;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 a {
@@ -47,6 +50,9 @@ img {
     vertical-align: bottom;
     border: none;
 }
+
+/* 全体 */
+
 body {
     background-color: #9944cc;
 }
@@ -55,6 +61,8 @@ body {
     margin: 50px;
     background-color: #fef4f8;
 }
+
+/* ヘッダー */
 
 .nav {
     max-width: 1000px;
@@ -92,59 +100,121 @@ body {
     margin-left: auto;
 }
 
-.h2_work,
-.h2_service,
-.h2_pic,
-.h2_intro,
-.h2_contact {
+/* 以下各項目共通 */
+
+section {
+    padding-top: 100px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    height: 78px;
     font-size: 50px;
+    font-weight: normal;
     color: #111111;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
         "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
         "MS 明朝", serif;
     text-align: center;
-    padding: 80px 500px;
 }
 
-.h3_work,
-.h3_service,
-.h3_pic,
-.h3_intro,
-.h3_contact {
+section h3 {
+    margin-bottom: 100px;
     font-size: 24px;
     color: #ff5086;
-    font-family: "Prata", serif;
+    font-family: "Sofia", cursive;
     text-align: center;
-    padding: 5px 500px;
 }
+
+/* サービス */
 
 .service {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    grid-template-rows: 200px 200px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
-.service1,
-.service2,
-.service3,
-.service4 {
-    color: black;
-    text-align: center;
-    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-        "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "MS Ｐ明朝",
-        "MS 明朝", serif;
+.service_block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service_item img {
+    width: 100%;
+}
+
+.service_item p {
+    font-size: 17px;
+    line-height: 1.47;
+}
+
+/* 自己紹介 */
+
+.about {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding-top: 0;
+}
+
+.about_block {
+    width: 42%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.about_block .about_img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    transform: translateY(-50%);
+}
+
+.about_block .about_img img {
+    width: 100%;
+}
+
+.about_block p {
+    margin-bottom: 48px;
+    padding-top: 56px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.6;
+}
+
+/* 写真スリック */
+.slick-prev:before,
+.slick-next:before {
+    color: #000 !important;
+}
+
+.slider p {
+    font-size: 2rem;
+    font-weight: bold;
     line-height: 100px;
-    width: 100px;
-    height: 100px;
+    color: #666;
+    margin: 10px;
+    text-align: center;
+    background-color: #e0e0e0;
 }
 
-.service1_img,
-.service2_img,
-.service3_img,
-.service4_img {
-    width: 250px;
-    height: 160px;
+/* 問い合わせフォーム */
+
+.contact_item {
+    width: 50%;
+}
+
+.contact_form {
+    right: 20px;
+    width: 50%;
+    position: absolute;
+    transform: translateY(-110%);
 }
 
 .c-form {
@@ -223,7 +293,20 @@ footer p {
     font-size: 16px;
 }
 
-/* works */
+/* pagetop */
+.pagetop {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 125px;
+}
+
+.pagetop img {
+    width: 100%;
+}
+
+/* リンク先ページ */
+/* WORKS */
 
 .accordion-002 {
     max-width: 500px;
